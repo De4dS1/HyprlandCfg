@@ -1,0 +1,40 @@
+//------------------------------------------
+// Configuracion
+//-----------------------------------------
+
+{
+	//Propiedades
+	"layer" : "top",
+
+	"height" : 38,
+
+	"position" : "top",
+
+	"margin-top" : 5,
+
+	// Modulos
+
+	"include" : ["~/.config/waybar/madulos.json"],
+
+
+	// Izquierda
+	"modules-left": [
+		"tray",
+		"clock"
+	],
+
+	// Centro
+
+	"modules-center" :[
+		"hyprland/workspaces"
+	],
+
+
+	// Derecha
+	"modules-right": [
+		"wireplumber",
+		"network",
+		"disk",
+		"battery"
+	]
+}

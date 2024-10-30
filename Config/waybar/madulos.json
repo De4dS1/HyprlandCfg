@@ -1,0 +1,51 @@
+{
+	"hyprland/workspaces" : {
+		"format" : "{icon}",
+		"format-icons" : {
+			"active" : "",
+			"default" : "",
+			"urgent" : "󰯉"
+		}
+	},
+
+	"tray": {
+ 		"icon-size": 21,
+    		"spacing": 10
+	},
+
+	"clock": {
+              	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        	"format-alt": "{:%Y-%m-%d}"
+    	},
+
+	"battery": {
+        	"states": {
+            	"warning": 30,
+            	"critical": 10
+        	},
+        	"format": "{capacity}% {icon}",
+        	"format-full": "{capacity}% {icon}",
+        	"format-charging": "{capacity}% 󰂄",
+        	"format-alt": "{time} {icon}",
+        	"format-icons": ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"]
+    	},
+
+	"disk": {
+    		"interval": 300,
+    		"format": "{used} usado",
+		"on-click" : "alacritty -e btop"
+	},
+
+	"network": {
+		"format-wifi": "{essid} ({signalStrength}%) 󰤨",
+		"format-disconnected": "Desconectado 󰤮"
+	},
+	
+	"wireplumber": {
+    		"format": "{volume}% {icon}",
+    		"format-muted": "󰸈",
+    		"on-click": "pavucontrol",
+		"on-click-right": "helvum",
+    		"format-icons": ["", "", ""]
+	}
+}
