@@ -33,8 +33,9 @@
 	// Derecha
 	"modules-right": [
 		"wireplumber",
-		"network",
+		//"network",
 		"disk",
-		"battery"
+		"custom/pwmenu"
+		//"battery"
 	]
 }

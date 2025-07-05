@@ -1,10 +1,21 @@
-(defwindow example
+(defwidget pwmenu []
+	(box :orientation "h" :space-evenly false :class "pwmenu" :halign "center" :valign "center" :spacing 20
+	(button :class "suspend" :onclick "eww close pwmenu & systemctl suspend" "󰒲")
+	(button :class "pwroff"  :onclick "shutdown & hyprctl dispatch dpms off & source /home/ula/.config/hypr/hyprcol.sh &" "⏻")
+	(button :class "reset"   :onclick "reboot" "")
+	(button :class "close"   :onrightclick "eww close pwmenu" "")
+)
+)
+
+
+(defwindow pwmenu
 	:monitor 0
-	:geometry (geometry :x "0%"
-			    :y "20px"
-			    :width "90%"
-			    :height "30px"
-			    :anchor "center")
-	:stacking "bottom"
+	:geometry (geometry :x "0px"
+			    :y "0px"
+			    :width "20%"
+			    :height "10%"
+			    :anchor "center center")
+	:stacking "fg"
 	:exclusive false
- "example content")
+	:focusable "none"
+ (pwmenu))

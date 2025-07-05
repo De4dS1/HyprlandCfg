@@ -1,0 +1,41 @@
+* {
+	all: unset;
+	font-family: "Iosevka";
+}
+
+@import '/home/ula/.cache/wal/colors.scss';
+
+window{
+	background: $background;
+	color: $cursor;
+	border: 5px solid $color1;
+        border-radius: 15px;
+}
+
+.suspend{
+  border: 3px solid $color2;
+  padding: 5px 14px 5px 5px;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+.pwroff{
+  border: 3px solid $color2;
+  padding: 5px 12px 5px 5px;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+.reset{
+  border: 3px solid $color2;
+  padding: 5px 12px 5px 5px;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+.close{
+  background: #f75e89;
+  color: $cursor;
+  padding: 0 5px 0 5px;
+  font-size: 2rem;
+}
